@@ -8,7 +8,7 @@
 
 html {
     --black: #0d114f;
-    --White: #fafafa;
+    --white: #fafafa;
     --red: #E83F5B;
     --light-blue: #E0ECFF;
     --blue: #3485FF;
@@ -76,7 +76,7 @@ button, .button {
     justify-content: center;
 
     background: var(--blue);
-    color: var(--White);
+    color: var(--white);
 
     transition: filter .2s;
 
@@ -95,10 +95,24 @@ button > img,
 
 button.outlined,
 .button.outlined {
-    background: var(--White);
+    background: var(--white);
     color: var(--blue);
     border: .2rem solid var(--blue);
 }
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+/***** HEADER *****/
 
 .content header {
     width: 80%;
